@@ -1,14 +1,18 @@
+import boardgame.Board;
 import boardgame.Position;
 
 public class Program {
 
     public static void main(String[] args){
 
-        Position position = Position.builder()
-                .row(3)
-                .column(5)
+        Board board = Board.builder()
+                .rows(8)
+                .columns(8)
                 .build();
 
-        System.out.println(position);
+
+
+
+        System.out.println(board);
     }
 }
